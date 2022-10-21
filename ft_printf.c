@@ -6,15 +6,15 @@
 /*   By: ulayus <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/05 22:37:12 by ulayus            #+#    #+#             */
-/*   Updated: 2022/10/19 18:55:38 by ulayus           ###   ########.fr       */
+/*   Updated: 2022/10/20 14:50:34 by ulayus           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int ft_dispatcher(const char *format, int i, va_list ap)
+static int	ft_dispatcher(const char *format, int i, va_list ap)
 {
-	int count;
+	int	count;
 
 	count = 0;
 	if (format[i] == 'c')
@@ -63,10 +63,3 @@ int	ft_printf(const char *format, ...)
 	va_end(ap);
 	return (count);
 }
-/*
-int main(void)
-{
-    ft_printf(" %p %p \n", (void *)LONG_MIN, (void *)LONG_MAX);
-    printf(" %p %p \n", (void *)LONG_MIN, (void *)LONG_MAX);
-    return (0);
-}*/

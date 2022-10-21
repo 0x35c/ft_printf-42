@@ -6,13 +6,13 @@
 #    By: ulayus <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/30 11:40:22 by ulayus            #+#    #+#              #
-#    Updated: 2022/10/09 21:02:20 by ulayus           ###   ########.fr        #
+#    Updated: 2022/10/20 14:54:43 by ulayus           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
 
-SRCS = ft_printf.c ft_printf_utils.c
+SRCS = ft_printf.c ft_printf_utils.c ft_print_addr.c
 
 CC = gcc
 
